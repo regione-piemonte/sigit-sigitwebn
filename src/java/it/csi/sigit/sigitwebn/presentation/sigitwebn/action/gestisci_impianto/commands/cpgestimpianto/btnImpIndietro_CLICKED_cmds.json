@@ -1,0 +1,27 @@
+
+{ "class": "it.csi.sigit.sigitwebn.presentation.sigitwebn.action.ExecCommand" ,
+	"azioni":[
+{ "class": "it.csi.sigit.sigitwebn.presentation.sigitwebn.action.JumpCommand" ,
+	"name": "cpRicImpianto", 
+	"pushCurrent":false
+}
+,
+{ "class": "it.csi.sigit.sigitwebn.presentation.sigitwebn.action.JumpCommand" ,
+	"name": "cpRisRicImpianto", 
+	"pushCurrent":false
+}
+,
+{ "class": "it.csi.sigit.sigitwebn.presentation.sigitwebn.action.JumpCommand" ,
+	"name": "cpGestSubentro", 
+	"pushCurrent":false
+}
+,
+{ "class": "it.csi.sigit.sigitwebn.presentation.sigitwebn.action.JumpCommand" ,
+	"name": "cpRisRicAvzImpianto", 
+	"pushCurrent":false
+}
+],
+	"esiti":["RIC_IMPIANTO","IMPIANTO","SUBENTRO","IMPIANTO_AVZ"],
+	"nomeMetodo":"gestisciIndietro",
+	"appDataToStore":[]
+}

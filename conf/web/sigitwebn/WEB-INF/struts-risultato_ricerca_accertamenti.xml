@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="risultato_ricerca_accertamenti" extends="jsp-package" namespace="/base/risultato_ricerca_accertamenti">
+
+		
+<action name="cpRisRicercaAccertamenti" class="it.csi.sigit.sigitwebn.presentation.sigitwebn.action.risultato_ricerca_accertamenti.CpRisRicercaAccertamentiAction">
+	<result name="input">/jsp/cpRisRicercaAccertamenti.jsp</result>
+	<result name="success">/jsp/cpRisRicercaAccertamenti.jsp</result>
+	
+	<result name="GO_TO_cpDettaglioAccertamento" type="chain">
+		<param name="actionName">cpDettaglioAccertamento</param>
+		<param name="namespace">/base/gestisci_accertamento</param>
+	</result>
+	<result name="GO_TO_cpRicercaAccertamenti" type="chain">
+		<param name="actionName">cpRicercaAccertamenti</param>
+		<param name="namespace">/base/ricerca_accertamenti</param>
+	</result>
+	<result name="GO_TO_BackPage" type="chain">
+		<param name="actionName">${backActionName}</param>
+		<param name="namespace">${backNamespace}</param>
+	</result>
+	
+</action>
+
+		<!--PROTECTED REGION ID(R-236321802) ENABLED START-->
+		<!-- inserire qui la dichiarazione di azioni aggiuntive hand-written -->
+		<!--PROTECTED REGION END-->
+
+	</package>
+</struts>
